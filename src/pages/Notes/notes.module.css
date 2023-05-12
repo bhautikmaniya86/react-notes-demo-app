@@ -1,0 +1,25 @@
+.notesApp {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 25px;
+}
+.addNotes {
+  font-size: 18px;
+  padding: 12px;
+  border-radius: 4px;
+  font-weight: 600;
+  color: white;
+  background: #009879;
+  border: none;
+}
+
+.addNotes:hover {
+  background: #01725c;
+  cursor: pointer;
+}

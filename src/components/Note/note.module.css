@@ -1,0 +1,110 @@
+.note {
+  width: 100%;
+}
+.note .list {
+  width: 100%;
+  overflow: auto;
+}
+.note .table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  width: 100%;
+  min-width: 800px;
+  overflow: auto;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+
+.table th,
+.table td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+.table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+.table tbody div.noRecord {
+  padding-top: 10px;
+  position: absolute;
+  width: 95%;
+  border-bottom: 1px solid #dddddd;
+  text-align: center;
+  height: 40px;
+}
+
+.table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
+.table .actions {
+  display: flex;
+  gap: 5px;
+}
+.table .actions button {
+  background: #e1e1e1;
+  border: none;
+  border-radius: 50%;
+  height: 28px;
+  width: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.table .actions button:hover {
+  background: #b6b6b6;
+}
+
+.search,
+.searchandSort {
+  display: flex;
+  justify-content: space-between;
+  width: -webkit-fill-available;
+}
+.sort {
+  display: flex;
+  gap: 10px;
+  padding: 0px 10px;
+}
+.sort select {
+  border-radius: 4px;
+  padding: 0px 12px;
+  height: 39px;
+}
+.search input {
+  display: block;
+  margin: auto;
+  width: 25%;
+  min-width: 207px;
+  border-radius: 4px;
+  padding: 0px 15px;
+  height: 39px;
+}
+@media screen and (max-width: 680px) {
+  .searchandSort {
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+  }
+  .search,
+  .sort {
+    align-items: center;
+    justify-content: center;
+  }
+}
