@@ -101,9 +101,9 @@ const Note = ({ notes, setMode, setCurrentNoteId, setNotes }: NoteProps) => {
             <tr>
               <th>Title</th>
               <th>Description</th>
-              <th>Actions</th>
               <th>Created At</th>
               <th>Updated At</th>
+              <th>Actions</th>
             </tr>
           </thead>
           <tbody>
