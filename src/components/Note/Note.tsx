@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useMemo, useState } from "react";
 import { Notes } from "../../pages/Notes/Notes";
 import { RemoveRedEye, Delete, Edit } from "@mui/icons-material";
 
